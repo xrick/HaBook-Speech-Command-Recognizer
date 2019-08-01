@@ -1,0 +1,3 @@
+How to use pdb or gdb debug from python into C/C++ code?
+
+https://wiki.python.org/moin/DebuggingWithGdb

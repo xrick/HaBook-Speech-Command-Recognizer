@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "testnewlm.py", line 16, in <module>
+    print("Sphinx thinks you said " + str(r.recognize_sphinx(audio,language="zh-CN",grammar='speechcommand.fsg')))
+  File "/Users/xrickliao/.local/share/virtualenvs/pyspeechrecog-Pbkb6zQf/lib/python3.6/site-packages/speech_recognition/__init__.py", line 791, in recognize_sphinx
+    decoder.set_fsg(grammar_name, fsg)
+  File "/Users/xrickliao/.local/share/virtualenvs/pyspeechrecog-Pbkb6zQf/lib/python3.6/site-packages/pocketsphinx/pocketsphinx.py", line 380, in set_fsg
+    return _pocketsphinx.Decoder_set_fsg(self, name, fsg)
+RuntimeError: Decoder_set_fsg returned -1

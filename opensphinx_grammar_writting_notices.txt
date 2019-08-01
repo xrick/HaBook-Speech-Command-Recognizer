@@ -1,0 +1,14 @@
+CMU pocketsphinx grammar writting 
+
+1. 檔名無需附檔名
+2. 檔名和文法開頭需一致
+
+grammar speechcommand;
+public <speechcommand> = <start-polite><command> ;
+<start-polite> = (小豆) + ;
+<command> = <operation><digit><object> ;
+<operation> = ( 挑出 | 選出 ) {OPERATION} ;
+<digit> = ( 一個 | 二個 | 三個 | 四個 | 五個 | 六個 | 七個 | 八個 | 九個 | 十個){QUANTITY} ;
+<object> = (學生 | 同學 | 答對 | 答錯 | 換答案 | 對到錯 | 錯到對) {OBJECT} ;
+
+則檔名需為speedcommand
