@@ -4,7 +4,7 @@ import os
 model_path = "/Users/xrickliao/.local/share/virtualenvs/pyspeechrecog-Pbkb6zQf/lib/python3.6/site-packages/speech_recognition/pocketsphinx-data/"
 
 language = 'zh-CN'
-grammar_file = 'speechcommand'
+grammar_file = 'speechcommand2'
 
 #grammar_path = os.path.join(modelPath, language, grammar_file)
 try:
@@ -52,4 +52,4 @@ try:
 except Exception as e:
     print('Ach no! {0}'.format(e))
 finally:
-    os.remove('speechcommand.fsg')  # Remove again to help prove that the grammar to fsg conversion isn't at fault
+    os.remove('speechcommand2.fsg')  # Remove again to help prove that the grammar to fsg conversion isn't at fault
